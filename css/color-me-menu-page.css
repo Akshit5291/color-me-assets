@@ -1333,17 +1333,18 @@ body > .copyright {
 }
 
 .menu-page .reserve-full-section .container {
-    max-width: 1440px !important;
+    max-width: 100% !important;
     margin: 0 auto !important;
-    padding: 100px 64px 72px !important;
+    padding: 82px 0 82px !important;
 }
 
 .menu-page .reserve-full-section .content-layout {
     display: grid !important;
-    grid-template-columns: 150px 1fr !important;
-    gap: 0 56px !important;
+    grid-template-columns: 34.5% 65.5% !important;
+    gap: 0 !important;
     margin: 0 !important;
     padding: 0 !important;
+    align-items: start !important;
 }
 
 .menu-page .reserve-full-section .sidebar-nav,
@@ -1352,9 +1353,18 @@ body > .copyright {
     padding-top: 0 !important;
 }
 
+.menu-page .reserve-full-section .sidebar-nav {
+    padding-left: clamp(80px, 9vw, 170px) !important;
+    padding-right: 28px !important;
+}
+
+.menu-page .reserve-full-section .main-content {
+    padding-right: clamp(24px, 5vw, 96px) !important;
+}
+
 .menu-page .reserve-full-section .sidebar-label {
     font-family: var(--font-en) !important;
-    font-size: 28px !important;
+    font-size: 40px !important;
     line-height: 1.2 !important;
     letter-spacing: 0.03em !important;
     color: #2e2e2e !important;
@@ -1366,8 +1376,8 @@ body > .copyright {
 }
 
 .menu-page .reserve-cta-banner {
-    width: min(100%, 693px) !important;
-    height: 230px !important;
+    width: 100% !important;
+    height: clamp(260px, 23.5vw, 360px) !important;
     border-radius: 8px !important;
     overflow: hidden !important;
     margin: 0 !important;
@@ -1382,28 +1392,28 @@ body > .copyright {
 }
 
 .menu-page .reserve-content-overlay {
-    background: rgba(46, 46, 46, 0.52) !important;
+    background: rgba(46, 46, 46, 0.58) !important;
 }
 
 .menu-page .reserve-pill-btn {
-    min-width: 323px !important;
-    height: 61px !important;
-    padding: 0 42px !important;
+    min-width: min(76%, 900px) !important;
+    height: clamp(84px, 7.5vw, 120px) !important;
+    padding: 0 clamp(36px, 4vw, 84px) !important;
     border-radius: 999px !important;
     background: #d8f1ed !important;
     color: #2e2e2e !important;
     font-family: var(--font-en) !important;
-    font-size: 32px !important;
+    font-size: clamp(28px, 2.7vw, 52px) !important;
     font-weight: 400 !important;
     line-height: 1 !important;
     letter-spacing: 0.01em !important;
-    gap: 20px !important;
+    gap: clamp(10px, 1.6vw, 28px) !important;
     box-shadow: none !important;
 }
 
 .menu-page .reserve-pill-btn svg {
-    width: 28px !important;
-    height: 28px !important;
+    width: clamp(18px, 2.2vw, 34px) !important;
+    height: clamp(18px, 2.2vw, 34px) !important;
 }
 
 .menu-page .footer {

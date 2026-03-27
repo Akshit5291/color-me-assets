@@ -1827,3 +1827,165 @@ body:has(.menu-page-root) .content-area {
     font-size: 24px !important;
 }
 
+/* ===== Menu reserve/footer exact desktop match (Figma 1:3328) ===== */
+@media screen and (min-width: 1025px) {
+    .menu-page .reserve-full-section {
+        margin-top: 120px !important;
+        background: #fafafa !important;
+        border-top: none !important;
+        border-bottom: 1px solid #2e2e2e !important;
+    }
+
+    .menu-page .reserve-full-section::before {
+        content: none !important;
+        display: none !important;
+    }
+
+    .menu-page .reserve-full-section .container {
+        max-width: 1366px !important;
+        margin: 0 auto !important;
+        padding: 0 !important;
+    }
+
+    .menu-page .reserve-full-section .content-layout {
+        display: grid !important;
+        grid-template-columns: 319px 693px !important;
+        column-gap: 161px !important;
+        justify-content: start !important;
+        align-items: start !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    .menu-page .reserve-full-section .sidebar-nav {
+        border-top: 1px solid #2e2e2e !important;
+        padding-top: 30px !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        min-height: 351px !important;
+    }
+
+    .menu-page .reserve-full-section .main-content {
+        border-top: none !important;
+        padding-top: 60px !important;
+        padding-right: 0 !important;
+        min-height: 351px !important;
+    }
+
+    .menu-page .reserve-full-section .sidebar-label {
+        display: inline-block !important;
+        margin-left: 243px !important;
+        font-family: var(--font-en) !important;
+        font-size: 16px !important;
+        line-height: 1 !important;
+        color: #2e2e2e !important;
+        letter-spacing: 0 !important;
+    }
+
+    .menu-page .reserve-cta-banner {
+        width: 693px !important;
+        height: 230px !important;
+        border-radius: 8px !important;
+        overflow: hidden !important;
+        margin: 0 !important;
+    }
+
+    .menu-page .reserve-content-overlay {
+        background: rgba(46, 46, 46, 0.6) !important;
+    }
+
+    .menu-page .reserve-pill-btn {
+        width: 422px !important;
+        min-width: 422px !important;
+        height: 69px !important;
+        padding: 0 24px !important;
+        border-radius: 999px !important;
+        font-size: 22px !important;
+        font-weight: 400 !important;
+        line-height: 1 !important;
+        gap: 12px !important;
+        box-shadow: none !important;
+    }
+
+    .menu-page .reserve-pill-btn svg {
+        width: 19px !important;
+        height: 16px !important;
+    }
+
+    .menu-page .footer {
+        background: #fafafa !important;
+        border-top: none !important;
+        padding: 32px 0 18px !important;
+    }
+
+    .menu-page .footer > .container {
+        max-width: 1366px !important;
+        margin: 0 auto !important;
+        padding: 0 !important;
+    }
+
+    .menu-page .footer-content {
+        display: grid !important;
+        grid-template-columns: 252px 390px 266px !important;
+        column-gap: 35px !important;
+        align-items: start !important;
+        margin-left: 193px !important;
+    }
+
+    .menu-page .footer-logos {
+        display: grid !important;
+        grid-template-columns: 1fr 1fr !important;
+        gap: 24px !important;
+    }
+
+    .menu-page .footer-logos .brand-svg {
+        height: 63px !important;
+        margin-bottom: 8px !important;
+    }
+
+    .menu-page .footer-insta-link {
+        font-size: 10px !important;
+        line-height: 22px !important;
+        color: #2e2e2e !important;
+    }
+
+    .menu-page .footer-nav-grid {
+        grid-template-columns: 94px 94px 1fr !important;
+        gap: 9px 0 !important;
+        margin-bottom: 12px !important;
+    }
+
+    .menu-page .footer-nav-grid a {
+        font-size: 12px !important;
+        line-height: 18px !important;
+        font-weight: 400 !important;
+    }
+
+    .menu-page .footer-nav-grid a.fw-normal {
+        font-size: 11px !important;
+        line-height: 18px !important;
+        color: #777 !important;
+    }
+
+    .menu-page .footer-contact-info {
+        font-size: 12px !important;
+        line-height: 14px !important;
+        color: #2e2e2e !important;
+    }
+
+    .menu-page .footer-ctas {
+        gap: 12px !important;
+    }
+
+    .menu-page .footer-cta-btn {
+        width: 266px !important;
+        min-height: 44px !important;
+        height: 44px !important;
+        border-radius: 100px !important;
+        font-size: 13px !important;
+        font-weight: 400 !important;
+        padding: 0 14px !important;
+        box-shadow: 0 3px 3px rgba(0, 0, 0, 0.16) !important;
+    }
+}
+

@@ -1286,3 +1286,30 @@
         }
     }
 
+    /* Floating reserve CTA behavior (mobile only) */
+    .float-reserve-btn {
+        display: none;
+    }
+
+    @media screen and (max-width: 1024px) {
+        .float-reserve-btn {
+            position: fixed;
+            right: 20px;
+            bottom: 24px;
+            z-index: 3000;
+            display: inline-flex !important;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            padding: 12px 20px;
+            border-radius: 999px;
+            background: #d8f1ed;
+            color: var(--color-primary);
+            font-family: var(--font-en);
+            font-size: 14px;
+            line-height: 1;
+            text-decoration: none;
+            box-shadow: 0 4px 14px rgba(0, 0, 0, 0.14);
+        }
+    }
+

@@ -1701,3 +1701,35 @@ body > .copyright {
     padding-right: 0 !important;
 }
 
+/* When this free page is embedded inside ColorMe theme layout, force-disable right column/blog */
+body:has(.menu-page-root) #side,
+body:has(.menu-page-root) #sub,
+body:has(.menu-page-root) #right,
+body:has(.menu-page-root) #right_column,
+body:has(.menu-page-root) #sidecolumn,
+body:has(.menu-page-root) #sidebar,
+body:has(.menu-page-root) .side,
+body:has(.menu-page-root) .side_column,
+body:has(.menu-page-root) .column-right,
+body:has(.menu-page-root) .plugin-blog,
+body:has(.menu-page-root) .plugin-blog_parts,
+body:has(.menu-page-root) .blog_parts,
+body:has(.menu-page-root) .blog {
+    display: none !important;
+}
+
+body:has(.menu-page-root) #contents,
+body:has(.menu-page-root) #content,
+body:has(.menu-page-root) #main,
+body:has(.menu-page-root) #main-contents,
+body:has(.menu-page-root) #mainContents,
+body:has(.menu-page-root) .main,
+body:has(.menu-page-root) .main-column,
+body:has(.menu-page-root) .content-area {
+    width: 100% !important;
+    max-width: 100% !important;
+    float: none !important;
+    margin: 0 !important;
+    padding-right: 0 !important;
+}
+

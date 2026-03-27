@@ -1750,3 +1750,80 @@ body:has(.menu-page-root) .content-area {
     padding-right: 0 !important;
 }
 
+/* ===== Menu reserve/footer final visual lock (v11) ===== */
+.menu-page .reserve-full-section {
+    border-top: none !important;
+}
+
+.menu-page .reserve-full-section::before {
+    content: none !important;
+    display: none !important;
+}
+
+.menu-page .reserve-full-section .content-layout {
+    grid-template-columns: 26% 74% !important;
+}
+
+.menu-page .reserve-full-section .sidebar-nav {
+    border-top: 1px solid #2e2e2e !important;
+    padding-top: 54px !important;
+}
+
+.menu-page .reserve-full-section .main-content {
+    border-top: none !important;
+    padding-top: 54px !important;
+}
+
+.menu-page .reserve-full-section .sidebar-label {
+    font-size: 42px !important;
+    line-height: 1.1 !important;
+}
+
+.menu-page .reserve-cta-banner {
+    height: 372px !important;
+}
+
+.menu-page .reserve-pill-btn {
+    width: min(56%, 540px) !important;
+    min-width: 360px !important;
+    height: 86px !important;
+    font-size: 22px !important;
+    gap: 10px !important;
+}
+
+.menu-page .reserve-pill-btn svg {
+    width: 22px !important;
+    height: 22px !important;
+}
+
+.menu-page .footer-content {
+    grid-template-columns: 320px 1fr 340px !important;
+    gap: 0 48px !important;
+}
+
+.menu-page .footer-logos .brand-svg {
+    height: 86px !important;
+}
+
+.menu-page .footer-insta-link {
+    font-size: 14px !important;
+}
+
+.menu-page .footer-nav-grid a {
+    font-size: 17px !important;
+    line-height: 1.4 !important;
+}
+
+.menu-page .footer-nav-grid a.fw-normal {
+    font-size: 13px !important;
+}
+
+.menu-page .footer-contact-info {
+    font-size: 16px !important;
+}
+
+.menu-page .footer-cta-btn {
+    min-height: 72px !important;
+    font-size: 24px !important;
+}
+

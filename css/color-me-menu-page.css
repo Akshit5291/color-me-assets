@@ -1153,6 +1153,65 @@ body:has(.menu-page-root) .content-area {
         border-bottom: none !important;
     }
 
+    .menu-page .menu-page-root > .container {
+        max-width: 1366px !important;
+        margin: 0 auto !important;
+        padding: 0 !important;
+    }
+
+    .menu-page .menu-page-root > .container > .content-layout {
+        display: grid !important;
+        grid-template-columns: 319.5px 693px !important;
+        column-gap: 161px !important;
+        align-items: start !important;
+        padding-bottom: 80px !important;
+        margin-top: 0 !important;
+    }
+
+    .menu-page .menu-page-root > .container > .content-layout > .sidebar-nav {
+        border-top: 1px solid #2e2e2e !important;
+        padding-top: 0 !important;
+    }
+
+    .menu-page .menu-page-root > .container > .content-layout > .main-content {
+        width: 693px !important;
+        max-width: 693px !important;
+        border-top: 1px solid #2e2e2e !important;
+        padding-top: 40px !important;
+    }
+
+    .menu-page .menu-page-root > .container > .content-layout > .main-content > .menu-list-section,
+    .menu-page .menu-page-root > .container > .content-layout > .main-content > .menu-intro-section,
+    .menu-page .menu-page-root > .container > .content-layout > .main-content > .menu-spa-intro,
+    .menu-page .menu-page-root > .container > .content-layout > .main-content > .menu-gallery,
+    .menu-page .menu-page-root > .container > .content-layout > .main-content > .menu-products-intro {
+        width: 693px !important;
+        max-width: 693px !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+
+    .menu-page .menu-page-root > .container > .content-layout > .main-content > .menu-list-section {
+        margin-bottom: 72px !important;
+    }
+
+    .menu-page .menu-page-root > .container > .content-layout > .main-content > .menu-gallery {
+        margin-bottom: 44px !important;
+    }
+
+    .menu-page .menu-page-root > .container > .content-layout > .main-content > .menu-products-intro {
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+    }
+
+    .menu-page .menu-products-intro-title {
+        margin-bottom: 18px !important;
+    }
+
+    .menu-page .menu-products-intro-body {
+        margin-top: 0 !important;
+    }
+
     .menu-page .reserve-full-section {
         position: relative !important;
         margin-top: 120px !important;
@@ -1166,7 +1225,7 @@ body:has(.menu-page-root) .content-area {
         position: absolute !important;
         left: 0 !important;
         top: 0 !important;
-        width: 530px !important;
+        width: max(319.5px, calc((100vw - 1366px) / 2 + 319.5px)) !important;
         height: 1px !important;
         background: #2e2e2e !important;
     }
@@ -1188,12 +1247,14 @@ body:has(.menu-page-root) .content-area {
 
     .menu-page .reserve-full-section .sidebar-nav {
         min-height: 351px !important;
-        border-top: 1px solid #2e2e2e !important;
-        padding: 44px 0 0 74px !important;
+        border-top: none !important;
+        padding: 44px 0 0 243px !important;
     }
 
     .menu-page .reserve-full-section .main-content {
         min-height: 351px !important;
+        width: 693px !important;
+        max-width: 693px !important;
         border-top: none !important;
         padding: 60px 0 60px 0 !important;
     }
@@ -1254,66 +1315,75 @@ body:has(.menu-page-root) .content-area {
 
     .menu-page .footer-content {
         display: grid !important;
-        grid-template-columns: 252px 390px 266px !important;
-        column-gap: 35px !important;
+        grid-template-columns: 272px 418px 284px !important;
+        column-gap: 28px !important;
         align-items: start !important;
-        margin-left: 193px !important;
+        margin-left: 128px !important;
     }
 
     .menu-page .footer-logos {
         display: grid !important;
         grid-template-columns: 1fr 1fr !important;
-        gap: 24px !important;
+        gap: 30px !important;
+        min-width: 0 !important;
+        align-items: start !important;
     }
 
     .menu-page .footer-logos .brand-svg {
-        height: 63px !important;
+        height: 74px !important;
         width: auto !important;
         margin-bottom: 8px !important;
     }
 
     .menu-page .footer-insta-link {
-        font-size: 10px !important;
+        font-size: 12px !important;
         line-height: 22px !important;
         color: #2e2e2e !important;
     }
 
+    .menu-page .footer-nav {
+        padding-left: 0 !important;
+        gap: 22px !important;
+        min-width: 0 !important;
+    }
+
     .menu-page .footer-nav-grid {
-        grid-template-columns: 94px 94px 1fr !important;
+        grid-template-columns: 112px 112px 1fr !important;
         gap: 9px 0 !important;
         margin-bottom: 12px !important;
     }
 
     .menu-page .footer-nav-grid a {
-        font-size: 12px !important;
-        line-height: 18px !important;
+        font-size: 14px !important;
+        line-height: 22px !important;
         font-weight: 400 !important;
         color: #2e2e2e !important;
     }
 
     .menu-page .footer-nav-grid a.fw-normal {
-        font-size: 11px !important;
-        line-height: 18px !important;
+        font-size: 12px !important;
+        line-height: 22px !important;
         color: #777 !important;
     }
 
     .menu-page .footer-contact-info {
-        font-size: 12px !important;
-        line-height: 14px !important;
+        font-size: 14px !important;
+        line-height: 20px !important;
         color: #2e2e2e !important;
     }
 
     .menu-page .footer-ctas {
-        gap: 12px !important;
+        gap: 14px !important;
+        align-items: flex-start !important;
     }
 
     .menu-page .footer-cta-btn {
-        width: 266px !important;
-        min-height: 44px !important;
-        height: 44px !important;
+        width: 284px !important;
+        min-height: 50px !important;
+        height: 50px !important;
         border-radius: 100px !important;
-        padding: 0 14px !important;
-        font-size: 13px !important;
+        padding: 0 18px !important;
+        font-size: 15px !important;
         font-weight: 400 !important;
         line-height: 1 !important;
         box-shadow: 0 3px 3px rgba(0, 0, 0, 0.16) !important;
@@ -1374,6 +1444,7 @@ body:has(.menu-page-root) .content-area {
     .menu-page .reserve-pill-btn svg {
         width: 18px !important;
         height: 18px !important;
+        display: inline-block !important;
     }
 
     .menu-page .footer {

@@ -1418,14 +1418,4 @@ body:has(.menu-page-root) .content-area {
     }
 }
 
-/* Absolute kill-switch: no top line on reserve section */
-.menu-page .reserve-full-section::before {
-    content: none !important;
-    display: none !important;
-}
-
-.menu-page .reserve-full-section .sidebar-nav,
-.menu-page .reserve-full-section .main-content {
-    border-top: none !important;
-}
 

@@ -1328,7 +1328,7 @@ body > .copyright {
     background: #fafafa !important;
     margin: 120px 0 0 !important;
     padding: 0 !important;
-    border-top: none !important;
+    border-top: 1px solid #2e2e2e !important;
     border-bottom: 1px solid #2e2e2e !important;
 }
 
@@ -1340,7 +1340,7 @@ body > .copyright {
 
 .menu-page .reserve-full-section .content-layout {
     display: grid !important;
-    grid-template-columns: 34.5% 65.5% !important;
+    grid-template-columns: 25% 75% !important;
     gap: 0 !important;
     margin: 0 !important;
     padding: 0 !important;
@@ -1354,12 +1354,12 @@ body > .copyright {
 }
 
 .menu-page .reserve-full-section .sidebar-nav {
-    padding-left: clamp(80px, 9vw, 170px) !important;
-    padding-right: 28px !important;
+    padding-left: clamp(24px, 2vw, 40px) !important;
+    padding-right: 32px !important;
 }
 
 .menu-page .reserve-full-section .main-content {
-    padding-right: clamp(24px, 5vw, 96px) !important;
+    padding-right: clamp(10px, 1.6vw, 26px) !important;
 }
 
 .menu-page .reserve-full-section .sidebar-label {
@@ -1377,7 +1377,7 @@ body > .copyright {
 
 .menu-page .reserve-cta-banner {
     width: 100% !important;
-    height: clamp(260px, 23.5vw, 360px) !important;
+    height: clamp(270px, 24.5vw, 380px) !important;
     border-radius: 8px !important;
     overflow: hidden !important;
     margin: 0 !important;

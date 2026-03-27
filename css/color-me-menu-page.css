@@ -1318,7 +1318,337 @@
     body > #footer,
     body > #shopFooter,
     body > #copyright,
-    body > .copyright {
+body > .copyright {
+    display: none !important;
+}
+
+/* ===== Menu page reserve/footer final lock (Figma PC/SP 1:2978 / 1:6251) ===== */
+.menu-page .reserve-full-section {
+    width: 100% !important;
+    background: #fafafa !important;
+    margin: 120px 0 0 !important;
+    padding: 0 !important;
+    border-top: none !important;
+    border-bottom: 1px solid #2e2e2e !important;
+}
+
+.menu-page .reserve-full-section .container {
+    max-width: 1440px !important;
+    margin: 0 auto !important;
+    padding: 100px 64px 72px !important;
+}
+
+.menu-page .reserve-full-section .content-layout {
+    display: grid !important;
+    grid-template-columns: 150px 1fr !important;
+    gap: 0 56px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.menu-page .reserve-full-section .sidebar-nav,
+.menu-page .reserve-full-section .main-content {
+    border-top: none !important;
+    padding-top: 0 !important;
+}
+
+.menu-page .reserve-full-section .sidebar-label {
+    font-family: var(--font-en) !important;
+    font-size: 28px !important;
+    line-height: 1.2 !important;
+    letter-spacing: 0.03em !important;
+    color: #2e2e2e !important;
+}
+
+.menu-page .reserve-section {
+    width: 100% !important;
+    padding: 0 !important;
+}
+
+.menu-page .reserve-cta-banner {
+    width: min(100%, 693px) !important;
+    height: 230px !important;
+    border-radius: 8px !important;
+    overflow: hidden !important;
+    margin: 0 !important;
+    background: #f3f3f3 !important;
+}
+
+.menu-page .reserve-cta-banner img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    object-position: center !important;
+}
+
+.menu-page .reserve-content-overlay {
+    background: rgba(46, 46, 46, 0.52) !important;
+}
+
+.menu-page .reserve-pill-btn {
+    min-width: 323px !important;
+    height: 61px !important;
+    padding: 0 42px !important;
+    border-radius: 999px !important;
+    background: #d8f1ed !important;
+    color: #2e2e2e !important;
+    font-family: var(--font-en) !important;
+    font-size: 32px !important;
+    font-weight: 400 !important;
+    line-height: 1 !important;
+    letter-spacing: 0.01em !important;
+    gap: 20px !important;
+    box-shadow: none !important;
+}
+
+.menu-page .reserve-pill-btn svg {
+    width: 28px !important;
+    height: 28px !important;
+}
+
+.menu-page .footer {
+    width: 100% !important;
+    background: #fafafa !important;
+    border-top: none !important;
+    padding: 56px 0 58px !important;
+}
+
+.menu-page .footer > .container {
+    max-width: 1440px !important;
+    margin: 0 auto !important;
+    padding: 0 64px !important;
+}
+
+.menu-page .footer-content {
+    display: grid !important;
+    grid-template-columns: 234px 1fr 266px !important;
+    gap: 0 56px !important;
+    align-items: start !important;
+}
+
+.menu-page .footer-logos {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 20px !important;
+}
+
+.menu-page .footer-logos .brand-svg {
+    height: 42px !important;
+    width: auto !important;
+    margin-bottom: 16px !important;
+}
+
+.menu-page .footer-insta-link {
+    font-size: 12px !important;
+    line-height: 1.4 !important;
+    color: #777 !important;
+}
+
+.menu-page .footer-nav {
+    display: block !important;
+}
+
+.menu-page .footer-nav-grid {
+    display: grid !important;
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    gap: 12px 24px !important;
+    margin-bottom: 26px !important;
+}
+
+.menu-page .footer-nav-grid a {
+    font-family: var(--font-en) !important;
+    font-size: 12px !important;
+    line-height: 1.45 !important;
+    font-weight: 500 !important;
+    color: #2e2e2e !important;
+    white-space: nowrap !important;
+}
+
+.menu-page .footer-nav-grid a.fw-normal {
+    font-size: 10px !important;
+    color: #777 !important;
+    font-weight: 400 !important;
+}
+
+.menu-page .footer-contact-info {
+    font-size: 12px !important;
+    line-height: 1.45 !important;
+    color: #2e2e2e !important;
+}
+
+.menu-page .footer-ctas {
+    display: grid !important;
+    grid-auto-rows: min-content !important;
+    gap: 12px !important;
+}
+
+.menu-page .footer-cta-btn {
+    width: 100% !important;
+    min-height: 44px !important;
+    border-radius: 100px !important;
+    font-size: 12px !important;
+    line-height: 1 !important;
+    font-weight: 500 !important;
+    padding: 0 18px !important;
+    justify-content: center !important;
+}
+
+.menu-page .footer-cta-btn.mint {
+    background: #d8f1ed !important;
+    color: #2e2e2e !important;
+}
+
+.menu-page .footer-cta-btn.gray {
+    background: #ededed !important;
+    color: #2e2e2e !important;
+}
+
+@media screen and (max-width: 1024px) {
+    .menu-page .reserve-full-section {
+        margin-top: 52px !important;
+        border-bottom: none !important;
+    }
+
+    .menu-page .reserve-full-section .container {
+        padding: 0 !important;
+        max-width: 100% !important;
+    }
+
+    .menu-page .reserve-full-section .content-layout {
+        display: block !important;
+    }
+
+    .menu-page .reserve-full-section .sidebar-nav {
         display: none !important;
     }
+
+    .menu-page .reserve-full-section .main-content {
+        width: 100% !important;
+        border-top: none !important;
+    }
+
+    .menu-page .reserve-cta-banner {
+        width: 100% !important;
+        height: 228px !important;
+        border-radius: 0 !important;
+    }
+
+    .menu-page .reserve-content-overlay {
+        background: rgba(46, 46, 46, 0.34) !important;
+    }
+
+    .menu-page .reserve-pill-btn {
+        min-width: 262px !important;
+        height: 56px !important;
+        font-size: 28px !important;
+        gap: 8px !important;
+    }
+
+    .menu-page .reserve-pill-btn svg {
+        width: 22px !important;
+        height: 22px !important;
+    }
+
+    .menu-page .footer {
+        padding: 0 0 28px !important;
+        border-top: none !important;
+    }
+
+    .menu-page .footer > .container {
+        padding: 0 39px !important;
+        max-width: 100% !important;
+    }
+
+    .menu-page .footer-content {
+        display: none !important;
+    }
+
+    .menu-page .footer-mobile-view {
+        display: flex !important;
+        flex-direction: column !important;
+        width: 100% !important;
+        padding: 0 !important;
+    }
+
+    .menu-page .footer-mobile-list {
+        margin-bottom: 28px !important;
+    }
+
+    .menu-page .footer-mobile-row {
+        min-height: 62px !important;
+        padding: 18px 0 !important;
+        border-bottom: 1px solid #2e2e2e !important;
+    }
+
+    .menu-page .footer-mobile-row span:first-child {
+        font-size: 14px !important;
+        font-weight: 400 !important;
+    }
+
+    .menu-page .footer-mobile-row .row-detail {
+        font-size: 10px !important;
+        color: #777 !important;
+    }
+
+    .menu-page .footer-mobile-secondary-links {
+        margin-bottom: 22px !important;
+        gap: 10px 18px !important;
+    }
+
+    .menu-page .footer-mobile-secondary-links a {
+        font-size: 10px !important;
+        color: #777 !important;
+        text-decoration: none !important;
+    }
+
+    .menu-page .footer-mobile-bottom-wrap {
+        margin-bottom: 8px !important;
+        gap: 20px !important;
+    }
+
+    .menu-page .footer-mobile-bottom-wrap svg {
+        height: 10px !important;
+    }
+
+    .menu-page .footer-mobile-bottom-wrap .combined-title {
+        font-size: 18px !important;
+        letter-spacing: 0.03em !important;
+    }
+
+    .menu-page .footer-copyright-sp {
+        font-size: 9px !important;
+        color: #a5a5a5 !important;
+    }
+}
+
+.menu-page .float-reserve-btn {
+    display: none !important;
+}
+
+@media screen and (max-width: 1024px) {
+    .menu-page .float-reserve-btn {
+        position: fixed !important;
+        right: 20px !important;
+        bottom: 24px !important;
+        z-index: 3000 !important;
+        display: inline-flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        gap: 8px !important;
+        padding: 12px 20px !important;
+        border-radius: 999px !important;
+        background: #d8f1ed !important;
+        color: #2e2e2e !important;
+        font-family: var(--font-en) !important;
+        font-size: 14px !important;
+        line-height: 1 !important;
+        text-decoration: none !important;
+        box-shadow: 0 4px 14px rgba(0, 0, 0, 0.14) !important;
+    }
+}
+
+/* Hide ColorMe default bottom blocks rendered after our custom footer */
+.menu-page .footer ~ *:not(.float-reserve-btn):not(script) {
+    display: none !important;
+}
 

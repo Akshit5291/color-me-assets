@@ -1313,3 +1313,12 @@
         }
     }
 
+    /* Color Me fallback: hide platform-injected default footer blocks when our custom footer is present */
+    body > footer:not(.footer),
+    body > #footer,
+    body > #shopFooter,
+    body > #copyright,
+    body > .copyright {
+        display: none !important;
+    }
+
